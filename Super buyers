@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy and Go Mall</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .hero {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 10px;
+            background-color: #f4f4f4;
+            margin-bottom: 10px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#shops">Shops</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Buy and Go Mall!</h1>
+            <p>Your one-stop destination for shopping, dining, and entertainment.</p>
+            <button onclick="window.location.href='#shops'">Explore Our Shops</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>Buy and Go Mall is a modern shopping center offering a wide variety of retail stores, dining options, and entertainment facilities. Located in the heart of the city, we provide an unforgettable shopping experience for all visitors.</p>
+        </div>
+    </section>
+
+    <section id="shops">
+        <div class="content">
+            <h2>Our Shops</h2>
+            <p>Browse a variety of stores ranging from fashion to electronics, home goods, and more!</p>
+            <ul>
+                <li>Fashion Store</li>
+                <li>Electronics Hub</li>
+                <li>Home Décor Shop</li>
+                <li>Sports Equipment</li>
+                <li>Bookstore</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="content">
+            <h2>Upcoming Events</h2>
+            <p>Check out the exciting events happening at Buy and Go Mall!</p>
+            <ul>
+                <li>Spring Fashion Show - March 5, 2025</li>
+                <li>Tech Expo - March 20, 2025</li>
+                <li>Summer Sale - June 1-15, 2025</li>
+                <li>Holiday Market - December 15-30, 2025</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Buy and Go Mall. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for reaching out! We'll get back to you soon.");
+            document.getElementById("contact-form").reset();
+        });
+    </script>
+</body>
+</html>
